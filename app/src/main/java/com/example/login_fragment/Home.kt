@@ -37,6 +37,8 @@ class Home : Fragment() {
         return inflater.inflate(R.layout.fragment_home, container, false)
     }
 
+
+
     companion object {
         /**
          * Use this factory method to create a new instance of
@@ -56,4 +58,5 @@ class Home : Fragment() {
                 }
             }
     }
+
 }

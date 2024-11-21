@@ -57,7 +57,6 @@ class Login : Fragment() {
 
             requireActivity().supportFragmentManager.beginTransaction()
                 .replace(R.id.container , SecondFragment)
-                .addToBackStack(null)
                 .commit()
         }
 

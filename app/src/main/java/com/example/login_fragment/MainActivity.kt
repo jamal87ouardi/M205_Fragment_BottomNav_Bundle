@@ -18,6 +18,11 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.container, Home())
+            .commit()
+
         val nav = findViewById<BottomNavigationView>(R.id.nav)
         nav.setOnItemSelectedListener { menuItem->
             when(menuItem.itemId){
